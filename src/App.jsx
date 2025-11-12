@@ -3,64 +3,69 @@ import turnpikeLogo from './assets/turnpikelogo.png'
 
 const stats = [
   {
-    label: 'Average clearance',
-    value: '37 min',
-    detail: 'from dispatch to lane reopen on Level 2 incidents',
+    label: 'Average response',
+    value: '20 min',
+    detail: 'or less to reach you in the Metro Detroit area',
   },
-  { label: 'Coverage', value: '9 turnpikes', detail: 'PA • OH • NJ • NY • MA • FL • IL • MI • OK' },
-  { label: 'Fleet assets', value: '18 units', detail: 'rotators, hazmat rigs, heavy-duty wreckers' },
+  { label: 'Availability', value: '24/7/365', detail: 'Always ready when you need us most' },
+  { label: 'Service rating', value: '5-star', detail: 'Fast, friendly, and professional service' },
 ]
 
 const services = [
   {
-    title: 'Heavy-Duty Recovery',
-    description: '70-ton rotators, uprighting systems, and air cushion lifts for jackknifed or overturned tractors.',
-    badge: 'Primary',
+    title: 'Jumpstarts',
+    description: 'Dead battery? We will get you started and back on the road in minutes.',
+    badge: 'Popular',
   },
   {
-    title: 'Hazmat Containment',
-    description: 'Certified hazmat crews with on-board booms, absorbents, and EPA reporting templates.',
-    badge: 'Specialized',
+    title: 'Tire Repair & Change',
+    description: 'Flat tire or blowout? We handle tire changes and emergency repairs on-site.',
+    badge: 'Essential',
   },
   {
-    title: 'Incident Command Support',
-    description: 'Unified command playbooks, drone assessment, and live progress dashboards for DOT partners.',
-    badge: 'Ops',
+    title: 'Lockout Service',
+    description: 'Locked out of your vehicle? We will get you back in quickly and safely—no damage.',
+    badge: 'Fast',
   },
   {
-    title: 'Fleet Transfer & Storage',
-    description: 'Secure yards, refrigerated storage, and cargo cross-docking to keep shippers online.',
-    badge: 'Logistics',
+    title: 'Battery Installation',
+    description: 'Need a new battery installed? We carry quality batteries and install them on the spot.',
+    badge: 'Convenient',
+  },
+  {
+    title: 'Fuel Delivery',
+    description: 'Ran out of gas? We will bring fuel directly to you so you can keep moving.',
+    badge: 'Lifesaver',
   },
 ]
 
 const responseSteps = [
   {
-    time: '0—5 min',
-    title: 'Field intel + dispatch',
-    detail: 'Multi-channel alerts, CAD notes translated into a single playbook, liaison assigned.',
+    time: '0—2 min',
+    title: 'Call us',
+    detail: 'Speak directly to Anthony—no automated menus, no call centers. Just real help, fast.',
   },
   {
-    time: '5—15 min',
-    title: 'Rolling response',
-    detail: 'Nearest crew mobilized with preloaded hazmat kit; partner updates every 4 minutes.',
+    time: '2—5 min',
+    title: 'We are on the way',
+    detail: 'Your location confirmed, service truck dispatched. We will keep you updated every step.',
   },
   {
-    time: '15—30 min',
-    title: 'On-scene stabilization',
-    detail: 'Traffic taper deployed, fuel offload begun, injured motorists relocated behind safe perimeter.',
+    time: '5—20 min',
+    title: 'We arrive',
+    detail: 'Professional service tech arrives with tools, parts, and everything needed to get you moving.',
   },
   {
-    time: '30+ min',
-    title: 'Recovery + reopen',
-    detail: 'Rig uprighting, debris sweep, compliance photos, and DOT-ready incident log delivered.',
+    time: '20—30 min',
+    title: 'Back on the road',
+    detail: 'Problem solved, payment handled, and you are safely back on your way.',
   },
 ]
 
 const guarantees = [
-  'Direct line to an operations lead—no call center maze.',
-  'Photo + telemetry proof for every milestone.',
-  'Redundant partner network to scale during severe weather.',
+  'Direct line to Anthony—real person, real help, every time.',
+  'Upfront pricing with no hidden fees or surprise charges.',
+  'Professional service that treats you like family, not a ticket number.',
 ]
 
 function App() {
@@ -68,21 +73,21 @@ function App() {
     <div className="page">
       <header className="hero panel">
         <div className="hero__content">
-          <p className="eyebrow">24/7 TURNPIKE RESPONSE • DOT + FLEET PARTNERS</p>
+          <p className="eyebrow">24/7 ROADSIDE ASSISTANCE • METRO DETROIT</p>
           <h1>
-            When the highway stops,
-            <span className="text-outline"> we get it moving again.</span>
+            Your roadside assistance lifeline,
+            <span className="text-outline"> anytime, anywhere.</span>
           </h1>
           <p className="lead">
-            Turnpike Recovery mobilizes hazmat-certified crews, 70-ton rotators, and real-time reporting to clear the most
-            disruptive incidents in minutes—not hours.
+            Turnpike Recovery delivers fast, friendly roadside assistance when you need it most. Jumpstarts, tire changes,
+            lockouts, battery installs, and fuel delivery—all with a personal touch.
           </p>
           <div className="actions">
-            <a className="btn btn--primary" href="tel:+14845551234">
-              Request dispatch
+            <a className="btn btn--primary" href="tel:+13132148805">
+              Call for help now
             </a>
-            <a className="btn btn--ghost" href="/Turnpike_Recovery_Brand_Style_Guide.pdf" target="_blank" rel="noreferrer">
-              Capability brief
+            <a className="btn btn--ghost" href="mailto:turnpikerecovery@gmail.com">
+              Email us
             </a>
           </div>
           <div className="stat-grid">
@@ -97,27 +102,27 @@ function App() {
         </div>
         <div className="hero__card panel panel--light">
           <img src={turnpikeLogo} alt="Turnpike Recovery logo" className="hero__logo" />
-          <p className="hero__tagline">National rapid-response unit dedicated to America&apos;s busiest toll roads.</p>
+          <p className="hero__tagline">Your trusted roadside assistance partner in Metro Detroit.</p>
           <div className="hero__hotline">
             <span>Emergency hotline</span>
-            <a href="tel:+14845551234">484 • 555 • 1234</a>
-            <small>Live dispatch, 365 days a year</small>
+            <a href="tel:+13132148805">(313) 214-8805</a>
+            <small>Available 24/7, 365 days a year</small>
           </div>
           <ul className="hero__list">
-            <li>Command-certified liaisons for DOT, State Police, and fleet partners</li>
-            <li>Live drone overview + telemetry delivered to your inbox</li>
-            <li>Chain-of-custody documentation ready before tow departure</li>
+            <li>Fast response times—usually 20 minutes or less</li>
+            <li>Speak directly to Anthony, no call center runaround</li>
+            <li>Upfront pricing with no hidden fees</li>
           </ul>
         </div>
       </header>
 
       <section className="section">
         <div className="section__header">
-          <p className="eyebrow">Capabilities</p>
-          <h2>Built for the messiest scenes on the turnpike.</h2>
+          <p className="eyebrow">Our Services</p>
+          <h2>Everything you need to get back on the road.</h2>
           <p className="section__lead">
-            Every deployment ships with the exact equipment, compliance packets, and communications flow you need to keep
-            freight moving and agencies briefed.
+            From dead batteries to flat tires, lockouts to fuel delivery—we have got you covered with fast,
+            professional service you can count on.
           </p>
         </div>
         <div className="card-grid">
@@ -133,8 +138,8 @@ function App() {
 
       <section className="section panel panel--timeline">
         <div className="section__header section__header--compact">
-          <p className="eyebrow">Incident timeline</p>
-          <h2>Command-level visibility from the first call.</h2>
+          <p className="eyebrow">How it works</p>
+          <h2>From your call to back on the road.</h2>
         </div>
         <ol className="timeline">
           {responseSteps.map((step) => (
@@ -151,17 +156,17 @@ function App() {
 
       <section className="section section--guarantee">
         <div className="panel panel--contrast">
-          <p className="eyebrow eyebrow--light">Partner guarantee</p>
-          <h2>Reliable, accountable, and always wheel-side.</h2>
+          <p className="eyebrow eyebrow--light">Our Promise</p>
+          <h2>Reliable, honest, and always there when you need us.</h2>
           <ul className="guarantee-list">
             {guarantees.map((item) => (
               <li key={item}>{item}</li>
             ))}
           </ul>
           <div className="assurance">
-            <p>Need turnkey coverage for your corridor?</p>
-            <a href="mailto:ops@turnpikerecovery.com" className="btn btn--inverse">
-              Book a readiness drill
+            <p>Need roadside assistance right now?</p>
+            <a href="tel:+13132148805" className="btn btn--inverse">
+              Call (313) 214-8805
             </a>
           </div>
         </div>
@@ -169,18 +174,18 @@ function App() {
 
       <section className="section cta panel">
         <div>
-          <p className="eyebrow">Next steps</p>
-          <h2>Schedule a 15-minute readiness review.</h2>
+          <p className="eyebrow">Get in touch</p>
+          <h2>Save our number—you will be glad you did.</h2>
           <p>
-            Walk through recent incidents, share your playbooks, and we&apos;ll align a standby plan that keeps every lane
-            moving.
+            Whether you need help right now or just want to save our contact for when you do,
+            we are here 24/7 to get you back on the road safely.
           </p>
         </div>
         <div className="cta__actions">
-          <a className="btn btn--primary" href="https://calendly.com">
-            Lock in a slot
+          <a className="btn btn--primary" href="tel:+13132148805">
+            Call (313) 214-8805
           </a>
-          <span className="cta__note">Or call 484 • 555 • 1234 for immediate coverage.</span>
+          <span className="cta__note">Or email us at turnpikerecovery@gmail.com</span>
         </div>
       </section>
     </div>
