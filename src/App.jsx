@@ -5,7 +5,7 @@ const stats = [
   {
     label: 'Average response',
     value: '20 min',
-    detail: 'or less to reach you in the Metro Detroit area',
+    detail: 'or less to reach you in the Greater Cleveland area',
   },
   { label: 'Availability', value: '24/7/365', detail: 'Always ready when you need us most' },
   { label: 'Service rating', value: '5-star', detail: 'Fast, friendly, and professional service' },
@@ -13,28 +13,28 @@ const stats = [
 
 const services = [
   {
-    title: 'Jumpstarts',
-    description: 'Dead battery? We will get you started and back on the road in minutes.',
-    badge: 'Popular',
+    title: 'Emergency Jumpstart Service',
+    description: 'Dead battery killed your plans? We deliver rapid jumpstart service anywhere in Greater Cleveland. Get started in minutes, not hours.',
+    badge: 'Most Popular',
   },
   {
-    title: 'Tire Repair & Change',
-    description: 'Flat tire or blowout? We handle tire changes and emergency repairs on-site.',
-    badge: 'Essential',
+    title: 'Flat Tire Change & Repair',
+    description: 'Flat tire or blowout has you stranded? We bring the tools, expertise, and spare—emergency tire change service completed roadside in under 15 minutes.',
+    badge: 'Fast Response',
   },
   {
-    title: 'Lockout Service',
-    description: 'Locked out of your vehicle? We will get you back in quickly and safely—no damage.',
-    badge: 'Fast',
+    title: 'Car Lockout Service',
+    description: 'Locked your keys in the car? Our professional lockout service gets you back in fast—no damage, no hassle, no judgment. Available 24/7.',
+    badge: 'No Damage',
   },
   {
-    title: 'Battery Installation',
-    description: 'Need a new battery installed? We carry quality batteries and install them on the spot.',
-    badge: 'Convenient',
+    title: 'Mobile Battery Replacement',
+    description: 'Battery dead for good? We carry premium replacement batteries and install them on-site. Full mobile battery service—no tow truck needed.',
+    badge: 'Same-Day',
   },
   {
-    title: 'Fuel Delivery',
-    description: 'Ran out of gas? We will bring fuel directly to you so you can keep moving.',
+    title: 'Emergency Fuel Delivery',
+    description: 'Ran out of gas on the highway? We deliver emergency fuel directly to your location. Get back on the road without the walk of shame to the gas station.',
     badge: 'Lifesaver',
   },
 ]
@@ -63,9 +63,10 @@ const responseSteps = [
 ]
 
 const guarantees = [
-  'Direct line to Anthony—real person, real help, every time.',
-  'Upfront pricing with no hidden fees or surprise charges.',
-  'Professional service that treats you like family, not a ticket number.',
+  'Talk to Anthony directly—zero automated menus, zero hold time, zero runaround.',
+  'Transparent pricing before we start—no surprise fees, no hidden charges, no games.',
+  'Treated like family, not a case number—because roadside emergencies are stressful enough.',
+  'Average 20-minute arrival time—because when you are stranded, every minute counts.',
 ]
 
 function App() {
@@ -73,14 +74,14 @@ function App() {
     <div className="page">
       <header className="hero panel">
         <div className="hero__content">
-          <p className="eyebrow">24/7 ROADSIDE ASSISTANCE • METRO DETROIT</p>
+          <p className="eyebrow">24/7 EMERGENCY ROADSIDE ASSISTANCE • GREATER CLEVELAND</p>
           <h1>
-            Your roadside assistance lifeline,
-            <span className="text-outline"> anytime, anywhere.</span>
+            Stranded? Stuck? Out of luck?
+            <span className="text-outline"> Not anymore.</span>
           </h1>
           <p className="lead">
-            Turnpike Recovery delivers fast, friendly roadside assistance when you need it most. Jumpstarts, tire changes,
-            lockouts, battery installs, and fuel delivery—all with a personal touch.
+            When your car breaks down, every second counts. Turnpike Recovery is Greater Cleveland's fastest response roadside assistance—
+            delivering jumpstarts, tire changes, lockouts, battery replacement, and fuel delivery in 20 minutes or less. Real help. Real fast. No runaround.
           </p>
           <div className="actions">
             <a className="btn btn--primary" href="tel:+13132148805">
@@ -102,7 +103,7 @@ function App() {
         </div>
         <div className="hero__card panel panel--light">
           <img src={turnpikeLogo} alt="Turnpike Recovery logo" className="hero__logo" />
-          <p className="hero__tagline">Your trusted roadside assistance partner in Metro Detroit.</p>
+          <p className="hero__tagline">Your trusted roadside assistance partner in Greater Cleveland.</p>
           <div className="hero__hotline">
             <span>Emergency hotline</span>
             <a href="tel:+13132148805">(313) 214-8805</a>
@@ -118,11 +119,11 @@ function App() {
 
       <section className="section">
         <div className="section__header">
-          <p className="eyebrow">Our Services</p>
-          <h2>Everything you need to get back on the road.</h2>
+          <p className="eyebrow">Full-Service Roadside Assistance</p>
+          <h2>From breakdown to back on the road—we handle it all.</h2>
           <p className="section__lead">
-            From dead batteries to flat tires, lockouts to fuel delivery—we have got you covered with fast,
-            professional service you can count on.
+            Dead battery at 3 AM? Flat tire on I-90? Locked out at the grocery store? Turnpike Recovery is your 24/7 emergency
+            roadside assistance partner in Cleveland, Parma, Lakewood, and surrounding areas. Professional service. Honest pricing. Lightning-fast response.
           </p>
         </div>
         <div className="card-grid">
@@ -138,23 +139,23 @@ function App() {
 
       <section className="section section--about">
         <div className="section__header">
-          <p className="eyebrow">About Us</p>
-          <h2>Meet Anthony—your trusted roadside partner.</h2>
+          <p className="eyebrow">About Anthony & Turnpike Recovery</p>
+          <h2>Real help from a real person—not a call center robot.</h2>
         </div>
         <div className="about-content panel panel--light">
           <div className="about-text">
             <p>
-              Hi, I am Anthony, owner and operator of Turnpike Recovery. I have been helping Metro Detroit drivers get back on the road for years, and I take pride in treating every customer like family.
+              Hey there, I am Anthony—owner, operator, and the guy who will actually answer when you call. I have spent years helping stranded drivers across Greater Cleveland get back on the road, and I treat every customer like they are family having a rough day.
             </p>
             <p>
-              When you call Turnpike Recovery, you are not getting a call center or an automated system—you are getting me. I personally handle every call, dispatch every service, and make sure you are taken care of from start to finish.
+              Here is what makes Turnpike Recovery different: When you call us at 3 AM with a dead battery or at rush hour with a flat tire, you are talking directly to me. No phone tree. No hold music. No dispatch center in another state. Just a local Cleveland guy with a truck full of tools, ready to help you out of a jam.
             </p>
             <p>
-              Whether you are stuck with a dead battery at 3 AM or locked out of your car in a parking lot, I will be there fast with the right tools and a friendly attitude. No job is too small, and no situation is too inconvenient. That is my promise to you.
+              I know how stressful car trouble can be. That is why I promise honest pricing, lightning-fast response times, and the kind of friendly service that makes a bad situation just a little bit better. Whether you are stuck on I-90, stranded in a parking lot, or broken down in your driveway—I have got you.
             </p>
             <div className="about-cta">
               <a className="btn btn--primary" href="tel:+13132148805">
-                Call Anthony now
+                Call Anthony directly: (313) 214-8805
               </a>
             </div>
           </div>
@@ -229,7 +230,7 @@ function App() {
           </div>
           <div className="contact-card panel panel--light">
             <h3>Service Area</h3>
-            <p>Proudly serving Metro Detroit and surrounding areas.</p>
+            <p>Proudly serving Greater Cleveland and surrounding areas.</p>
             <p className="contact-detail">
               <strong>Available 24/7/365</strong><br />
               Fast response times—usually 20 minutes or less
