@@ -136,6 +136,31 @@ function App() {
         </div>
       </section>
 
+      <section className="section section--about">
+        <div className="section__header">
+          <p className="eyebrow">About Us</p>
+          <h2>Meet Anthony—your trusted roadside partner.</h2>
+        </div>
+        <div className="about-content panel panel--light">
+          <div className="about-text">
+            <p>
+              Hi, I am Anthony, owner and operator of Turnpike Recovery. I have been helping Metro Detroit drivers get back on the road for years, and I take pride in treating every customer like family.
+            </p>
+            <p>
+              When you call Turnpike Recovery, you are not getting a call center or an automated system—you are getting me. I personally handle every call, dispatch every service, and make sure you are taken care of from start to finish.
+            </p>
+            <p>
+              Whether you are stuck with a dead battery at 3 AM or locked out of your car in a parking lot, I will be there fast with the right tools and a friendly attitude. No job is too small, and no situation is too inconvenient. That is my promise to you.
+            </p>
+            <div className="about-cta">
+              <a className="btn btn--primary" href="tel:+13132148805">
+                Call Anthony now
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="section panel panel--timeline">
         <div className="section__header section__header--compact">
           <p className="eyebrow">How it works</p>
@@ -172,20 +197,44 @@ function App() {
         </div>
       </section>
 
-      <section className="section cta panel">
-        <div>
-          <p className="eyebrow">Get in touch</p>
-          <h2>Save our number—you will be glad you did.</h2>
-          <p>
-            Whether you need help right now or just want to save our contact for when you do,
-            we are here 24/7 to get you back on the road safely.
+      <section className="section section--contact">
+        <div className="section__header">
+          <p className="eyebrow">Contact Us</p>
+          <h2>We are here 24/7—ready when you need us.</h2>
+          <p className="section__lead">
+            Save our contact information now so you are prepared when roadside trouble strikes.
+            We are always just one call away.
           </p>
         </div>
-        <div className="cta__actions">
-          <a className="btn btn--primary" href="tel:+13132148805">
-            Call (313) 214-8805
-          </a>
-          <span className="cta__note">Or email us at turnpikerecovery@gmail.com</span>
+        <div className="contact-grid">
+          <div className="contact-card panel panel--light">
+            <h3>Emergency Hotline</h3>
+            <p>Call anytime, day or night. Anthony answers personally.</p>
+            <a className="contact-link" href="tel:+13132148805">
+              <strong>(313) 214-8805</strong>
+            </a>
+            <a className="btn btn--primary" href="tel:+13132148805">
+              Call now
+            </a>
+          </div>
+          <div className="contact-card panel panel--light">
+            <h3>Email Us</h3>
+            <p>For non-urgent questions, quotes, or general inquiries.</p>
+            <a className="contact-link" href="mailto:turnpikerecovery@gmail.com">
+              <strong>turnpikerecovery@gmail.com</strong>
+            </a>
+            <a className="btn btn--ghost" href="mailto:turnpikerecovery@gmail.com">
+              Send email
+            </a>
+          </div>
+          <div className="contact-card panel panel--light">
+            <h3>Service Area</h3>
+            <p>Proudly serving Metro Detroit and surrounding areas.</p>
+            <p className="contact-detail">
+              <strong>Available 24/7/365</strong><br />
+              Fast response times—usually 20 minutes or less
+            </p>
+          </div>
         </div>
       </section>
     </div>
